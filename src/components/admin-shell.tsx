@@ -47,12 +47,10 @@ const nav = [
 
 function Sidebar({
   compact,
-  setCompact,
   mobile,
   close,
 }: {
   compact: boolean;
-  setCompact?: React.Dispatch<React.SetStateAction<boolean>>;
   mobile?: boolean;
   close?: () => void;
 }) {
@@ -159,7 +157,7 @@ function Sidebar({
 }
 
 export function AdminShell({ children }: { children: ReactNode }) {
-  const [compact, setCompact] = useState(true);
+  const [compact] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const current = nav.find((item) => item.to === "/" ? pathname === "/" : pathname.startsWith(item.to))?.label ?? "Dashboard";
@@ -168,7 +166,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
     <div className="min-h-screen bg-background text-foreground">
       {/* Desktop Fixed Sidebar */}
       <div className="hidden lg:block">
-        <Sidebar compact={compact} setCompact={setCompact} />
+        <Sidebar compact={compact} />
       </div>
 
       {/* Mobile Drawer */}
