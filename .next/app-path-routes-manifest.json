@@ -1,1 +1,13 @@
-{"/_not-found/page":"/_not-found","/page":"/","/bookings/page":"/bookings","/cancellations/page":"/cancellations","/coupons/page":"/coupons","/hotels/page":"/hotels","/availability/page":"/availability","/payments/page":"/payments","/reports/page":"/reports","/rates/page":"/rates","/settings/page":"/settings"}
+{
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/availability/page": "/availability",
+  "/cancellations/page": "/cancellations",
+  "/bookings/page": "/bookings",
+  "/coupons/page": "/coupons",
+  "/hotels/page": "/hotels",
+  "/payments/page": "/payments",
+  "/rates/page": "/rates",
+  "/reports/page": "/reports",
+  "/settings/page": "/settings"
+}
